@@ -14,8 +14,10 @@
 
 .gameContainer {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  margin: 30px 10px;
+  align-items: center;
+  height: 100vh;
 }
 .grid {
   display: grid;
@@ -42,9 +44,18 @@
   margin-left: 25px;
 }
 
-.reset {
+.imgBox img {
+  /* width: 100px; */
+  height: 0;
+  transition: height 2s ease-in-out;
+}
+.imgBox {
+  margin-top: 20px;
+}
+#reset {
   padding: 5px 10px;
   background-color: var(--red);
+  margin-top: 30px;
   color: #fff;
   cursor: pointer;
 }
